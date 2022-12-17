@@ -11,8 +11,8 @@ public class Sayac {
 
     public void sayac() {
         HashMap<Integer, String> numbersofClosed = new HashMap<>();
-        CloseProcess closeProcess = new CloseProcess();
-        numbersofClosed = closeProcess.close();
+        ClosedProcess closedProcess = new ClosedProcess();
+        numbersofClosed = closedProcess.close();
         int sayac = 0;
         for (int i = 1; i < 1001; i++) {
             if (numbersofClosed.get(i).equalsIgnoreCase("Open")) {

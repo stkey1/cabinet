@@ -12,7 +12,7 @@ public class Cabinet {
     public HashMap<Integer, String> cabinet() {
         HashMap<Integer, String> cabinets = new HashMap<>();
         for (int i = 1; i < 1001; i++) {
-            cabinets.put(i,"Open");
+            cabinets.put(i,"Close");
         }
         return cabinets;
     }
