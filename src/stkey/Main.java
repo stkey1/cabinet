@@ -10,7 +10,7 @@ package stkey;
  */
 public class Main {
     public static void main(String[] args) {
-	Sayac sayac = new Sayac();
-	sayac.sayac();
+	Counter counter = new Counter();
+	counter.numbersofClosed();
     }
 }

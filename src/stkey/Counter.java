@@ -7,19 +7,22 @@ import java.util.HashMap;
  * @add closeProcess
  * @since 17.12.2022
  */
-public class Sayac {
-
-    public void sayac() {
+public class Counter {
+    /**
+     * Closed Cabinets Counter
+     */
+    public void numbersofClosed() {
         HashMap<Integer, String> numbersofClosed = new HashMap<>();
         ClosedProcess closedProcess = new ClosedProcess();
         numbersofClosed = closedProcess.close();
-        int sayac = 0;
+        int numbers = 0;
         for (int i = 1; i < 1001; i++) {
             if (numbersofClosed.get(i).equalsIgnoreCase("Open")) {
-                sayac++;
+                numbers++;
                 System.out.println(i + ". Cabinet is Opened");
             }
         }
-        System.out.println(sayac);
+        System.out.println(numbers);
     }
 }
+

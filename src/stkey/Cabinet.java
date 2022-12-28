@@ -9,7 +9,10 @@ import java.util.HashMap;
  * @since 17.12.2022
  */
 public class Cabinet {
-    public HashMap<Integer, String> cabinet() {
+    /**
+     * @return cabinets
+     */
+    public HashMap<Integer, String> cabinetDefinition() {
         HashMap<Integer, String> cabinets = new HashMap<>();
         for (int i = 1; i < 1001; i++) {
             cabinets.put(i,"Close");

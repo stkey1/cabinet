@@ -1,5 +1,4 @@
 package stkey;
-
 import java.util.HashMap;
 
 /**
@@ -11,10 +10,13 @@ import java.util.HashMap;
  * @since 17.12.2022
  */
 public class ClosedProcess {
+    /**
+     * @return closed
+     */
     public HashMap<Integer, String> close() {
         HashMap<Integer, String> closed = new HashMap<>();
         Cabinet cabinet = new Cabinet();
-        closed = cabinet.cabinet();
+        closed = cabinet.cabinetDefinition();
         for (int j = 1; j <= 1000; j++) {
             for (int i = 1; i <= 1000; i++) {
                 if (i % j == 0) {
